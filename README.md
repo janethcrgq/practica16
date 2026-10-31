@@ -1,4 +1,5 @@
-# Práctica 16
+# Práctica 16 
+(Practica 17 y las preguntas están en la rama practica17)
 
 **¿Por qué se usa un contexto y no props para la sesión?**
 Porque la sesión la usan varios componentes (el encabezado, Entrar y Registro). Con props habría que pasarla de componente en componente. Con el contexto, cualquiera la lee directo con useSesion().
@@ -8,3 +9,4 @@ El contexto vale null porque nadie le da valor, y mi hook useSesion lanza un err
 
 **¿Dónde se guarda el token y qué riesgo tiene ese lugar?**
 Se guarda en el localStorage del navegador. El riesgo es que cualquier script que corra en la página puede leerlo y robarlo, y con el token podría hacer peticiones como si fuera el usuario.
+
